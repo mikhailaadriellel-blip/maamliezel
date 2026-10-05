@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>HAPPY TEACHER'S DAY, MA'AM LIEZEL!</title>
+<style>
+body {
+background-color: #B8A85D;
+color: #B8A85D;
+font-family: "Times New Roman", serif;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+.page {
+min-height: 100vh;
+box-sizing: border-box;
+padding: 100px 25px;
+}
+h1 {
+font-size: 45px;
+margin-bottom: 25px;
+}
+p {
+font-size: 21px;
+line-height: 1.6;
+}
+.welcome-box {
+background-color: #F7E5C1;
+max-width: 700px;
+padding: 50px 30px;
+margin: auto;
+border: 3px solid #1C393F;
+border-radius: 15px;
+}
+.welcome-box h1 {
+color: #B8A85D;
+}
+.button {
+background-color: #B8A85D;
+color: #F7E5C1;
+padding: 15px 35px;
+border: none;
+border-radius: 8px;
+font-size: 20px;
+font-family: "Times New Roman:, serif;
+cursor: pointer;
+margin-top: 20px;
+}
+.button:hover {
+background-color:#F7E5C1;
+}
+#secondPage {
+display: none;
+}
+.letter {
+background-color: #F7E5C1;
+color: #B8A85D;
+max-width: 750px;
+margin: auto;
+padding: 45px;
+border: 3px solid #1C393F;
+border-radius: 15px;
+text-align: left;
+}
+.letter h2 {
+text-align: center;
+font-size: 32px;
+margin-bottom: 35px;
+}
+.letter p {
+font-size: 19px;
+line-height: 1.8;
+}
+.signature {
+margin-top: 30px;
+}
+.back-button {
+background-color:#B8A85D;
+color: #F7E5C1;
+border: none;
+padding: 12px 25px;
+font-family: "Times New Roman", serif;
+font-size: 17px;
+border-radius: 8px;
+cursor: pointer;
+display: block;
+margin: 30px auto 0;
+}
+</style>
+</head>
+<body>
+<!-- FIRST PAGE-->
+<div id="firstPage" class="page">
+<div class="welcome-box">
+<h1>Hello, welcome ma'am Liezel!</h1>
+<p>October 5, 2026</p>
+<p>Click the button below</p>
+<button class="button" onclick="openLetter()">
+Open the surprise
+</button>
+</div>
+</div>
+<!-- SECOND PAGE -->
+<div id="secondPage" class="page">
+<div class="letter">
+<h1>Happy Teacher's Day!</h1>
+<center>
+<img src="robio.jpg" height="200" width="200">
+</center>
+<p>To our Science subject teacher,</p>
+<p>Ma'am gusto 'ko po sana munang humingi ng sorry sa nangyari sa section namin. Alam po namin na hibdi naging maayos yung paraan ng pagsabi namin ng concern namin tungkol sa pagmemorize ng periodic table. Naiintindihan na po namin kung ba't ninyo gustong kabisaduhin namin ang atomic mass, atomic number, symbol and name ng mga elements, gusto niyo lang pong ihanda kami sa test.</p>
+<p>Humihingi po kami ng tawad kung naging makulit po kami, sana po hindi niyo isipin na hindi namin pinahahalagahan ang mga itinuturo niyo, may mga bagay lang po kaming hindi naipahayag nang maayos at sadyang nadala lang po kami sa mga emosyon namin. Pasensya na po at alam po naming bata pa lang po kami at inaaral pa namin kung paano kontrolin ang aming emosyon at hindi basta-basta kumikilos o nagsasabi ng kung ano-ano.</p>
+<p>Gusto 'ko rin po mag sorry kasi po baka iniisip niyo na ako pa po talaga yung malakas mag reklamo, ako lang po at si nichole ang naga speak up para po sa mga kaklase namin pero po hindi po ibig sabihin na galit po kaming dalawa sainyo</p>
+<p>Sa araw na ito, gusto lang naming sabihin na salamat parin po sa pagtiis at pagtuloy na pagturo samin kahit minsan mahirap kaming intindihin.</p>
+<p>Happy Teacher's Day, po Ma'am Liezel</p>
+</p>
+<p class="signature">
+Coded by Adrielle
+</p>
+<button class="back-button" onclick="goBack()">
+< back
+</button>
+</div>
+</div>
+<!-- JAVASCRIPT -->
+<script>
+function openLetter() {
+document.getElementById("firstPage").style.display="none";
+document.getElementById("secondPage").style.display="block";
+}
+function goBack() {
+document.getElementById("secondPage").style.display="none";
+document.getElementById("firstPage").style.display="block";
+}
+</script>
+</body>
+</html>
